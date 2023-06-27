@@ -26,7 +26,7 @@ export default function Developer() {
     <div>
       <h1>Developer Team</h1>
      {id && Arr.filter((item)=>item.id==id).map((item)=>(
-      <h3 key={item.id}>{item.name}{item.role}</h3>
+      <h3 key={item.id}>Name:{item.name} --- Role: {item.role}</h3>
      ))}
     </div>
   );
